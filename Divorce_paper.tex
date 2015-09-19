@@ -1,0 +1,467 @@
+\input{HelperFile.tex}
+\begin{document}
+
+
+
+
+\title{Risk Sharing within Family with Endogenous Marriage Dissolution}
+\author{Mohsen Mirtaher}
+\date{\today}
+\maketitle
+
+\section{Introduction}
+
+Risk sharing against income shocks is cited as one of the gains of marriage in the literature \citep{Chiappori_Mazzocco_2014}. Risk sharing via family operates through two mechanisms. First, shocks to an agent's wage can be compensated by the change in (intensive or extensive margin of) the spouse's labor supply. For instance, when the husband is hit by a health shock and become disabled, the wife can start working (extensive margin) or increase her hours of working by switching from a part-time job to a full-time one (intensive margin). The response in extensive margin is known in the literature as the "added worker effect" \citep{Hyslop_2001}. \citet{Juhn_Potter_2007} finds that the this insurance mechanism has weakened by recent increase in correlation of employment and hours of work among couples. Second, conditional on employment of both wife and husband,  a partner's negative income shock can be absorbed by the other partner via income pooling, barring a perfect positive correlation across spouses' income shocks. In the face of permanent and transitory income shocks, \citet{Blundell_etal_2015_Con-Ineq} try to find the quantitative importance of theses family insurance mechanisms in comparison with the self-insurance via saving and government provided insurances such as transfers, tax credits, and progressivity of taxes. They find that after a \$100 permanent shock to the husband's income, his contemporaneous consumption only responses as much as \$35, therefore \$65 of the shock is insured. After breaking down the share of different insurance mechanisms, they find that income pooling within family and wife's labor supply response accounts for \$35 and \$21 worth of insurance, respectively, which is a large share. To put in perspective, self-insurance via savings and government each provides \$ 7 worth of insurance. Therefore, risk sharing within family is an important insurance mechanism agains income volatilities.  \\
+
+Nonetheless, \citet{Blundell_etal_2015_Con-Ineq} finding about the outsize contribution of family in providing insurance
+may partly be due to their sample selection, because they focus only on stable marriages. However, in a theoretical analysis of marriage dissolution, \citet{Becker_etal_1977} analyze that uncertainty about traits related to gains of marriage can explain divorce. In fact, couples who divorce are the ones that realized traits of the partners are unfavorably different that expectation at the time of marriage formation. Earning capacity is an important trait about which there is uncertainty and income shocks, particularly the permanent ones, reveal new information about it. Arrival of new information can make couples to seek separation. \citet{Weiss_Willis_1997} find that a negative income shock to the husband's income increases the hazard rate of divorce whereas a positive one decreases it.  \\
+
+Therefore, despite the fact that family is an effective risk sharing means, it can be unravelled in the face of shocks. In other words, this insurance mechanism, as \citet{Krueger_Perri_2006_RES} name it, is "endogenous" meaning that the structure of uncertainty can influence the amount of insurance. \citet{Krueger_Perri_2006_RES} analyze a theoretical framework in which agents agree on risk-sharing, however they could renege on their obligations at the expense of excluding from risk-sharing in future. Marriage is a perfect example of such a contract. The partners commit to share the risk while they are together, yet they can get divorce if their marriage participation constraint binds. In other words, marriage is a contract with partial commitment by parties; they are committed up to the point that they are better off with marriage relative to separation. In fact, modeling marriage as a partially committed arrangement is gaining traction in the literature \cite{Chiappori_Mazzocco_2014; Mazzocco_Yamaguchi_2014}.  \\
+
+\citet{Lise_Yamada_2014} empirically test the hypothesis of partial commitment and find that they could not reject it. Consistent with partial commitment, they find that the extent of insurance within family is limited; if realized income shocks are small, the family provide insurance, but large realized shocks cannot be insured unless the Pareto weight between couples is updated accordingly. Therefore, when realized shocks are small, marriage stays intact and couples enjoy the benefit of risk sharing within family, but large realized shocks could dissolve the marriage and halts the risk sharing exactly at the time that there is the most need for insurance \footnote{ The limitation of the endogenous insurance could be mitigated by allowing the partners to rebargain about the Pareto weight before going straight for divorce. For instance, if the participation is binding for wife, it is possible to save the marriage by updating the Pareto weight more favorably toward the wife so that she achieve at least the value of being single. This way, the husband is still better off relative to getting divorce. In other words, if the participation constraint for the wife is binding with or without renegotiating she will get the value of being single, but allowing renegotiation benefits the husband.}.\\
+
+In this paper, we study the risk-sharing within family with limited commitment. We extend \citet{Blundell_etal_2015_Con-Ineq}  by broadening the sample to not only continuously married families but also those who have experienced divorce. We examine how the family's contribution to providing insurance will be affected if we allow that marriage dissolution happens endogenously. In particular, we investigate the level of available consumption insurance against different components of income shocks in an environment that there is full commitment relative to the one that commitment to marriage is limited. One can expect that large share of family in providing insurance, which is reported in \citet{Blundell_etal_2015_Con-Ineq}, drops and consumption inequality rises if the possibility of marriage dissolution is introduced to the analysis. Therefore, the first contribution of the paper is to measure how much the two insurance mechanisms provided by family is weakened if divorce is allowed to happen. \\
+
+The endogenous nature of the insurance provided within family can have important policy implications. In fact, the insurances provided by government can interact with insurance mechanisms embedded in the marriage. In particular, we study the progressivity of labor income taxes as an insurance offered by government. Mechanically, progressive taxing is an equalizing policy. However, in addition, it can reinforce family insurance mechanisms by ameliorating the problem of limited commitment. Net of income effects, a progressive scheme relative to a comparable flat tax rate, makes it less likely for participation constraint to be binding, because the discrepancy in after tax wage shocks between couples is muted. In other words, everything else equal, a more progressive labor income tax scheme \footnote{After compensation to offset income effects that makes the marriage participation constraints tighter.} reduces divorce rate. Therefore, to reduce consumption inequality, the progressive taxing is an even more effective policy in a world with partially committed families than in a world in which everybody is single or spouses are fully committed. As a policy counterfactual, we study an increase in progressivity of labor income tax. In other words, progressive tax not only reduces between household consumption inequality but also reduces within household consumption inequality when the partners are partially committed. Therefore enhancing commitment within family provides an additional ground for equality enhancing effects of progressive taxing. Empirically, we are interested to estimate the quantitative importance of the extra equalizing effect stemming from looser participation constraints in the marriage contract.  \\
+
+
+Lastly, we are interested to study how the features of spouses' income shock process affect divorce rate. In particular, we are interested in the effect of persistence and variance of different components of labor income shock on divorce. \citet{Krueger_Perri_2006_RES} show theoretically that, holding persistence fixed, an increase in the variance of income shock, reinforces the endogenous risk sharing mechanism. In light of their finding, one can expect that in the context of marriage, higher variance in income shocks, reduces the probability of divorce and subsequently crowds out part of the increase in consumption inequality following the increase in variance of income shocks. In addition to variance, we also study the effect of persistence in income process on divorce. The persistence of shocks on decision to divorce may matter because the more persistent shocks contain more information about partners' earning capacity than transitory ones, therefore we expect that persistent shocks affects marriage instability more heavily. \footnote{An alternative way of modeling of the income shocks is based on heterogeneous rate of growth of income. In fact, in this alternative approach, what econometrician observes as a "shock" in income is driven mostly by heterogeneous rate of growth of income. Thus, if we assume, that couples have a better information about earning potentials of each other than econometrician, we expect that "shocks" would have less effect on divorce. We will study how these two alternative ways of modeling of income shocks affects marriage dissolution.} \\
+
+ Before the empirical analysis, to gain intuition about how income shocks could lead to divorce, we do a simple theoretical analysis via a two period model with uncertainty about income stream and persistence in income shocks. A married couple in the first period, after learning about one another's income shock, decide about divorce at the end of the first period. Because of persistence in income shock, the realized first period shocks reveal some information about the status of the stochastic part of  income at the second period.  We show that the wife's willingness to divorce is higher when her income is less volatile relative to her husband and income shocks, at the second period, are less correlated between couples. This result has clear intuitive interpretation. The insurance provided by family is valued less for the spouse who enjoys less volatile income stream and needs less insurance. In addition, the less correlated income shocks, the more the family can provide insurance.  \\
+
+Furthermore, we study the effect of persistence on the willingness to divorce, given the realized first period shocks. With higher persistence, it is more likely that the partner who is hit with the more favorable shock, to maintain his upper hand, in terms of income shock, at the second period. Thus, he/she is better off to get divorce and consume his/her own shock instead of sharing it with the other partner if they are income maximizer. However, by introduction of risk aversion (concavity of utility function), the effect of persistence on willingness to divorce becomes ambiguous. In fact, there are cases in which divorce is facilitated by less persistence. For instance, assume that couples are faced with negative shocks at the first period. To smooth consumption, they are willing to borrow against their future income shock to make up for the adverse shocks at the first period. The more persistent the shock process, the less they can borrow, because tomorrow will not be that different from today.  Therefore, with less persistent process, the couples start the second period under higher amount of debt.  This makes their marginal utility of consumption higher and makes them more sensitive to income gradient between marriage and divorce, consequently, they are more willing to get divorce if predictable income under divorce is higher. Thus, theoretically, the effect of persistence in income process on divorce is ambiguous. \\
+
+The rest of this paper is organized as follows. Section 2 lays out a simple theoretical model to demonstrate the way that uncertainty about income stream can entail to marriage dissolution. In particular, we study the effect of volatility and persistence in income process on likelihood of divorce. Section 3 delineates a structural model. Section 4 is about data and reduced form analysis. Section 5 reports the results of structural model estimation. Section 6 discusses the results and concludes. \\
+
+
+\section{Two-Period Model} 
+
+In the spirit of \citet{Hess_2004}, there are two periods in the model. In period zero, each person meets a person of opposite gender. They decide to marry or stay single forever. In period one, each spouse income shocks realize and couples decide about their first period consumption and saving. At the end of first period, couples decide about to married or divorce in the second period. Finally, in the second period, after realization of second period income shocks each group of singles, married, and divorce individuals choose their second period consumption. \\
+
+The income process is modeled as the following:
+
+\begin{align*}
+y_{i,t} &= \bar y_{i,t} + \varepsilon_{i,t} \quad i \in \{h,w\} \\
+\varepsilon_{i,t} & = \mu_i \varepsilon_{i, t-1} + \eta_{i,t}
+\end{align*}
+
+
+where $\bar y_{i,t}$ denotes part of income can be fully predicted based on observables at period zero.  $\mu_i$ captures the persistence of income shocks for spouse $i$. In the rest of the paper for simplicity I assume that \(\mu_i = \mu_j=\mu\).  \( \eta_{i,t} \) disturbances are not serially correlated. It is also assumed that income shocks $\varepsilon_{i,t}$ are stationary. 
+
+In this two-period model, $\bar y_i$ denotes the expected present value of lifetime earning of person $i$ in period zero. Denote the fraction of observable lifetime income earned in the first period by $\theta$. Thus
+
+\begin{align*}
+\bar y_{i1} &= \theta \bar y_{i} \\
+\bar y_{i2} &=  (1+r) (1 - \theta) \bar y_{i} = \beta^{-1} (1 - \theta) \bar y_{i} 
+\end{align*}
+
+\noindent where the last equality come from the assumption that \((1+r) = \beta^{-1}\). I use the following notations to denote income shocks moments:
+
+\begin{align*}
+E[\varepsilon_{i,t}  \varepsilon_{j,t}] &\equiv \rho_\varepsilon \sigma_{i,\varepsilon} \sigma_{j,\varepsilon}  \quad i \neq j\\
+E[\varepsilon_{i,t}^2] &\equiv \sigma^2_{i,\varepsilon} \quad i \in \{h,w\}
+\end{align*}
+
+To keep the problem analytically tractable I make further simplifying assumptions. First, social welfare function while in a marriage is additive separable in couples consumption with equal Pareto weights
+
+\begin{equation*}
+U(c_h, c_w) = \dfrac{1}{2}u(c_h) + \dfrac{1}{2}u(c_w)
+\end{equation*}
+
+Second, upon divorce, the first period savings and the second period observable income are divided equally. Therefore, the divorcee consume their second period income shock fully, whereas the married share equally their income shocks. Third, I specify the individual utility function as a quadratic 
+
+\begin{equation*}
+u(c) = c - \dfrac{b}{2} c^2
+\end{equation*}
+
+\section{Solving the model}
+Using the backward induction technique we solve the model as the following 
+\subsection{Second Period}
+The married couples jointly decide about their optimal consumption by solving the following problem 
+
+\begin{align}
+\max_{c_{h2}^M, c_{w2}^M} & \quad U(c^M_{h2}, c_{w2}^M) \nonumber \\
+s.t. \sum_{k \in \{h,w\}} c_{k2}^M & = \beta^{-1} \left (\sum_k s_k + (1-\theta) \sum_k \bar y_k \right ) + \sum_k \varepsilon_{k2} \nonumber
+\end{align}
+
+\noindent where $s_k$ denotes the spouse's $k$ saving in the first period. FOCs for this problem readily imply
+
+\begin{equation}
+c_{h2}^M = c_{w2}^M \equiv c_{2}^M = \beta^{-1} \left ( \underbrace{\dfrac{1}{2} \sum_k s_k + \dfrac{1}{2} (1-\theta) \sum_k \bar y_k }_{B}\right ) + \dfrac{1}{2}\sum_k \varepsilon_{k2} 
+\label{c2m}
+\end{equation}
+
+Upon divorce, we need an assumption about the way that physical and labor assets are going to split. I assume that couples split both saving and non-stochastic part of labor income in the second period. By this assumption the amount of saving and non-stochastic part of income is the same whether marriage dissolves or not. The nice implication of this assumption is that the amount of saving would be independent of decision to divorce. I later explore the implications of relaxing this assumption. Therefore, with regime of resource allocation, in the case of divorce, the divorcee resources in the second period is the following. Since, the agent would die at the end of this period, optimization problem for divorce people is trivial and they consume all of their resources. 
+
+\begin{equation}
+c_{i2}^D = \beta^{-1} \left ( \underbrace{\dfrac{1}{2} \sum_k s_k + \dfrac{1}{2} (1-\theta) \sum_k \bar y_k}_{B} \right ) + \varepsilon_{i2} 
+\label{c2d}
+\end{equation}
+
+Equations \eqref{c2d} and \eqref{c2m} entail that consumption in the second period period is comprised of three components. First, the non-stochastic part of income in the second period. Second, the intertemporal transfer of first period income -both stochastic and non-stochastic parts- via saving. Third, the stochastic part of income realized in the second period. Comparing \eqref{c2d} and \eqref{c2m}  reveals that - with the aforementioned rule of resource division upon divorce - the only difference between married and divorce people in the second period is that divorce people consume their own income shock whereas the married individuals have access to an extra insurance mechanism thorough which they share their second period income shock. In fact, in the second period there are three types of agents with regard to marital status: single, divorce, and married. The only insurance device available for the single is the self-insurance via saving. Divorcee, on top of self-insurance, have access to another type of insurance that is the pooling income shocks. However, they use this extra insurance in the first period as opposed to the married who use it in both periods. In other words, singles opt out of this extra insurance altogether, Divorced individuals opt out only in the second period, and the married never opt out. 
+
+\subsection{First Period}
+
+I assume that couples play a non-cooperative game, so that, given the wife's consumption-saving decision, $c_{w1}^M, s_w$, husband determines his consumption-saving level by solving the following problem \footnote{Another plausible alternative is to assume that couples jointly decide about consumption-saving 
+
+\begin{align*}
+\max_{c_{h1}^M, c_{w1}^M, \sum_{k} s_k} \quad  &U(c_{h1}^M, c_{w1}^M) + \beta \left \{ D E_1[ U(c^D_{h2}, c^D_{w2})] + (1-D) E_1 [U(c_{2}^M, c_{2}^M)] \right \}  \\
+s.t. &\sum_{k \in \{h,w\}} c^M_{k1} + \sum_k s_k = \theta \sum_k \bar y_k + \sum_k \varepsilon_{k1}
+\end{align*}
+
+}
+
+
+
+\begin{align}
+\max_{c_{h1}^M, s_h} \quad  &U(c_{h1}^M, c_{w1}^M) + \beta \left \{ D E_1[ u(c^D_{h2})] + (1-D) E_1 [U(c_{2}^M, c_{2}^M)] \right \} \nonumber \\
+s.t. &\sum_{k \in \{h,w\}} c^M_{k1} + \sum_k s_k = \theta \sum_k \bar y_k + \sum_k \varepsilon_{k1} \label{p1constraint}
+\end{align}
+
+Note that $D$ is a function of $\sum_k s_k$, therefore the objective function is not smooth with respect to $s_h$. The optimal consumption level is
+
+\begin{align}
+c^M_{h1} = D E_1[c^D_{h2}] + (1-D) E_1[c_2^M]  \label{cd}
+\end{align}
+
+where $E_1$ denotes the expectation conditional on revealed information by the first period.  Equation \eqref{cd} can be explained intuitively. In the single-agent problem with quadratic preferences, consumption smoothing implies that the first period consumption is equal to the expected second period consumption. Therefore, the agent will equate the first period consumption with a divorcee's expected consumption if she decides to divorce and with that of a married individual if she decides to stay married.  By substituting \eqref{c2m} and \eqref{c2d}  in \eqref {div} and taking expectation
+
+\begin{equation}
+c^M_{h1} = \dfrac{ \mu}{2}   \left \{ \varepsilon_{h1} + \varepsilon_{w1} + D (\varepsilon_{h1} - \varepsilon_{w1})  \right \} + \beta^{-1} B
+\label{c1mh}
+\end{equation}
+
+Similarly, by solving the wife's problem given husband's consumption-saving decision, we derived the the wife's first period consumption as follows. 
+
+\begin{equation}
+c^M_{w1} = \dfrac{ \mu}{2}   \left \{ \varepsilon_{h1} + \varepsilon_{w1} + D (\varepsilon_{w1} - \varepsilon_{h1})  \right \} + \beta^{-1} B
+\label{c1mw}
+\end{equation}
+
+By substituting \eqref{c1mh} and \eqref{c1mw} in the first period constraint \eqref{p1constraint}
+
+\begin {align}
+(1 + \beta^{-1}) \sum_{k \in \{h,w\}} s_k  &=  \left (\theta - \beta^{-1} (1- \theta)  \right ) \sum_k \bar y_k + \left ( 1 - \mu \right ) \sum_k \varepsilon_{k1} \\
+B & = \dfrac{1}{2} \left \{ \dfrac {1}{1 + \beta^{-1}}\sum_k \bar y_k + \dfrac{ 1 - \mu}{1 + \beta^{-1}}  \sum_k \varepsilon_{k1} \right \} 
+\label {saving}
+\end{align}
+
+
+Note that the joint saving, \( \sum_k s_k\), is independent of decision to divorce. This is the case because the way that joint saving splits between partners in the second period is independent of decision to divorce. Thus, the optimization problem in the first period is solved by the following algorithm. First, the couple find the optimal level of joint saving according to \eqref{saving}. Second, they make make decision about divorce. Third, they choose the optimal consumption levels in the first period. \\
+
+Equation \eqref{saving} shows that two forces in the model leads to saving. First, if there is a skewness in arrival of non-stochastic income across two periods, the couple use the saving technology to smooth the the skewed arrival of income. For instance, if the agent has to spend the first period for investment in the first period, the predictable dividend of this invest meant will arrive in the second period implying negative saving (borrowing) to smooth the difference in arrival non-stochastic part of income. Second, the couple transfer part of the realized income shock in the first period to the second period. However, this transfer depends depend on the degree of persistence in income shocks. The more persistent are the shocks, the less incentive the couple have to save a part of their first income shock because they are anticipating to hit with more or less the same shock in the second period. In the extreme case of random walk income process ($\mu = 1$) in which any shock in the first period fully carries to the second period, the couple fully consume their first period shocks and do not save any part of them. The discussion is summarized in the following proposition.
+
+\begin{prop}
+If assets are divided according to the same rule under marriage or divorce, the joint saving will be independent of the decision to divorce. Furthermore, the joint saving is a decreasing function with respect to persistency in income shock process ($\mu$). 
+\end{prop}
+ 
+
+\subsection{Decision to Divorce}
+At the end of the first period and after realization of first-period income shocks, the husband finds it optimal to walk away from marriage if his expected second-period utility under divorce is higher that that under marriage:
+
+\begin{equation}
+D_h = \mathbf 1 \left \{ E_1 u(c_{h2}^D) > E_1 u(c_2^M) \right \}
+\label{div}
+\end{equation}
+
+By substituting \eqref{c2m} and \eqref{c2d}  in \eqref {div} and taking expectation conditional on revealed information at the first period:
+
+\begin{align*}
+D_h = \mathbf 1 \left \{u(\beta^{-1}B + \mu \varepsilon_{h1}) - u(\beta^{-1}B + \mu \dfrac{\varepsilon_{h1} + \varepsilon_{w1}}{2}) > \dfrac{b  (1- \Omega )\sigma^2_{h,\eta}}{2} \right \}
+\end{align*}
+
+Or equivalently, 
+
+\begin{align}
+D_h = \mathbf  1  \left  \{ \underbrace{  \mu (\varepsilon_{h1} - \dfrac{\varepsilon_{h1} + \varepsilon_{w1}}{2} ) - \dfrac{b}{2} \mu^2 (\varepsilon^2_{h1} - \dfrac{(\varepsilon_{h1} + \varepsilon_{w1})^2}{4})}_{u(\mu \varepsilon_{h1}) - u(\mu \frac{\varepsilon_{h1} + \varepsilon_{w1}}{2})} \right. \nonumber \\
+\left.   - \underbrace{  \dfrac{b }{4(1+\beta)}  \mu (\varepsilon_{h1} - \varepsilon_{w1})   \sum_k \bar y_k }_{\text{income effect due to non-stochastic part of income}}\right. \nonumber \\
+\left.   -  \underbrace{\dfrac{b }{4(1+\beta)} \mu (\varepsilon_{h1} - \varepsilon_{w1}) (1-\mu) (\varepsilon_{h1} + \varepsilon_{w1})}_{\text{income effect due to saving}}  \right.  \nonumber \\ 
+ \left.     >  \underbrace{\dfrac{b  (1- \Omega )\sigma^2_{h,\eta}}{2}}_{\text{threshold}}   \right \}
+\end{align}
+
+ where  $\Omega = \dfrac{1 + 2\rho_\eta \Phi+ \Phi^2}{4}$, $\Phi = \dfrac{\sigma^2_{w,\eta}}{\sigma^2_{h,\eta}}$. %$B = \dfrac{1}{2} \sum_k s_k + \dfrac{1}{2} (1-\theta) \sum_k \bar y_k$. 
+
+The LHS of the inequality is consist of three terms. In order to interpret them, remember that consumption in the second period is financed by three resources: second period income shocks, non-stochastic part of income, and saving. In addition, among three resources, only income shocks are affected by decision to divorce and saving and non-stochastic income is the same whether married or divorce. Thus the difference in consumption between divorcees and the married is due to facing different income shocks: the married share equally their income shocks whereas divorcees fully consume their own income shock. \\
+
+For the rest of discussion, without loss of generality, assume that the husband receives a better shock compared to his wife at the first period, $ (\varepsilon_{h1} - \varepsilon_{w1}) > 0$. The argument is exactly parallel when the wife is hit by a better shock. Then, strictly increasing property of the utility function, $u(.)$, implies that the first terms is positive. This result is intuitive because if husband receives a comparing better shock in the first period, given the persistence of income process, he also expects the upper hand in the second period as well. Therefore, for the husband, the utility of expected income shock while divorced is higher than utility of expected income shock while married. However, the first term captures the difference in utility when theres is no saving (nor non-stochastic income) and income shocks are the sole source of consumption. \\
+
+The second term and third term appear because the consumption also is financed by non-stochastic part of income and saving, which are the same across marriage and divorce. The second term is negative to correct for part of consumption coming from non-stochastic income. The third term has ambiguous sign and accounts for saving. To gain intuition, when saving is positive, the marginal utility of consumption at the second period is higher compared to the case that saving is zero (i.e. the first term); therefore the first term overstates the extra utility gained by getting divorce. In contrast, when saving is negative (i.e. borrowing), the marginal utility of consumption at the second period is higher compared to the case that saving is zero (i.e. the first term); therefore the first term understates the extra utility gained by getting divorce. Thus, the third term is positive when saving is negative and vice-versa. A parallel argument justifies why the second terms is appeared with negative sign. The existence of non-stochastic income as another source of consumption lowers the marginal utility of consumption, consequently, it makes the extra gain of getting divorce calculated in the first term exaggerated. The second term shows up negatively to correct for it.  \\
+
+By now, it should be clear that concavity of utility function plays a big role in decision to divorce characterized in  \eqref{div}. In fact, if the agents were risk-neutral and utility function was linear the decision, the divorce decision would be very simple: the husband will get divorce if he has a comparing better shock. In that case agents choose the marital status that gives a higher expected income. \\
+
+\begin{equation*}
+D_h = \mathbf 1 \left \{ \dfrac{\mu}{2} (\varepsilon_{h1} - \varepsilon_{w1}) > 0\right\}
+\end{equation*}
+
+An interesting question to investigate is how the likelihood of divorce affected by persistence of the income shock process, $\mu$, given the same realized first period income shocks for the couple? The short answer is that it is theoretically ambiguous. For the rest of our discussion keep the assumption that it is the husband who enjoys a better income shock at the first period. An increase in $\mu$, reinforces the better position of the husband's income in the second period and widens the income gap between the state of divorce and marriage. However, higher income in the state of divorce means lower marginal utility of consumption. Thus, in the state of divorce relative to marriage, each unit of extra income generates less utility even though the income gain is higher. Therefore, it is ambiguous whether the marginal utility gain in the state of divorce beats that of marriage following an increase in persistence of income shocks. In addition, the reaction of saving even further complicates the problem. Assume that the sum of couple's shock at the first period has been positive so that they could save part of it. We discussed that as the persistence of income shock goes up a smaller fraction of first period shocks are saved. In the extreme case of random walk, none of the first period shocks are saved. Thus, with higher persistence, the dampening effect of (positive) saving to correct for marginal utility lowers. On the other hand, with lower persistence, the difference between divorce and staying married in terms of predictable income becomes smaller, thus, the correcting effect of saving is smaller, too. Therefore, the corrective effect of saving disappears both for highly persistent and non-persistent income processes. In fact, in this model, it is maximized when $\mu = 0.5$. The above discussion is summarized in the following proposition:
+
+\begin{prop}
+Given the first-period realized income shocks, the effect of a change in persistence of income process, $\mu$, on willingness to divorce is ambiguous.
+\end{prop}
+
+ 
+What is the role of uncertainty in decision to divorce in \eqref{div}? Uncertainty about income in the second period creates the threshold in the RHS of the equation \eqref{div}. With no uncertainty, this threshold would be zero, thus, regardless of how concave the utility function is, the spouse with better shock in the first period will seek divorce because she/he  will enjoy certainly higher income in the second period as well due to persistence in in come process.  However, with the introduction of an income shock in the second period, a risk-averse agent, will take into account the distribution of joint income shock. The following proposition formalizes how properties of joint income shock distribution affect the decision to divorce. 
+
+\begin{prop}
+Without loss of generality, assume that the husband is hit by a better income shock in the first period implying that LHS of \eqref{div} is positive. Then, the husband is better off to divorce if the RHS threshold is negative. This happens when the husband's transitory shock variance relative to that of wife is small enough, i.e.,  \( \dfrac{\sigma_{h, \eta}}{\sigma_{w,\eta} } < d^*(\rho_\eta)\). Furthermore,  \( \dfrac{\partial d^*}{\partial \rho_{\eta}} > 0\) implying that the husband's willingness to divorce is weakly increasing with respect to $\rho_\eta$.  
+\end{prop}
+
+The intuition behind the proposition 2 is clear. Provided that the husband has been benefited a better income shock in the first period, due to persistence in income process, he will also expect a better shock in the second period, unless the the variance of his transitory shock is high. In fact, so long as the variance of his transitory shock is small relative to the wife,  \( \dfrac{\sigma_{h, \eta}}{\sigma_{w,\eta} } < d^*(\rho_\eta)\), unambiguously he would seek divorce. In other words, there are two forces in the model that induce the husband to divorce: first, a better first-period income shock combined with persistence and, second, a lower variance transitory shock relative to the wife. However, if the husband has a relatively more spread transitory income shock, he benefits from risk sharing within marriage in the second period due to more volatile shock. Thus, this force acts in the opposite direction of the first force; consequently the decision to divorce would be ambiguous.  \\
+
+Note that $d^*(\rho_\eta)$ is an increasing function of transitory income shocks correlation, $\rho_\eta$.  As the income correlation increases the insurance capability of the marriage decreases. As a result, even with more relatively volatile shock, he would still better off with divorce. In other words, with higher correlation of transitory shock the insurance capability of the marriage is lower, thus, only with highly volatile shock, the husband opt in to take advantage of the insurance provided by marriage.     \\
+
+
+\subsection{Decision to Marry}
+ At period zero, an agent compares the expected value of marrying with that of staying single throughout both periods. Husband $h$ is willing to marry to wife $w$ according to the following 
+
+\begin{equation*}
+M = \mathbf 1\{E_0 W_h^M > E_0 W_h^{NM}\}
+\end{equation*}
+  
+
+\section{Data}
+The data comes from the 1999-2013 Panel Study of Income Dynamics (PSID). Although PSID started in 1968 and followed the original representative households and their split-offs, starting 1999 it is included collected data about consumption and asset holdings. Since we need to use the consumption data we skip the rounds before 1999. 
+
+We focus on the following subsample. non-SEO households, age between 22 - 65 to be post college and before retirement. 
+
+I follow marriages meaning that I track each marriage from its onset until when it ends to divorce or separation. We drop the marriages that end due to other reasons including the death of one of the spouses. Since the formation of marriage is exogenous we only consider the first time marriages and ignore remarriages.  We also pick the marriages that both spouses are participating in labor force and the head of family is a male.\\
+
+
+
+\subsection{controlling for observables}
+We regress the wages on the following observables and define the residual as the income shock. The controls are year, race, living in urban area, education, year of birth as well as interaction terms including race-year, city-year, and education-year. For earnings we also add dummies for the number of kids, employment status, number of family members, the existence of another earner on top of the head and his wife and the children who do no live with the household. For time varying variables the difference variable is added as well as the level. 
+
+\section{Structural Estimation}
+
+Since the majority of people remarry after divorce we allow the agents to remarry once after divorce. However, since we treat marriage formation exogenously,  following \citet{Voena_2015}, we model remarriage as a random event with Bernoulli distribution. Therefore, we focus on the subsample that at most one divorce and one remarriage is happened. Thus, there are three possible marital states at each period $t$: married, divorced, and remarried; $s_t \in \mathcal S = \{M, D, R \}$. Remarriage, $R$,  is the absorbing marital state.  There are two types of individuals: husbands and wives $j \in \{ H, W\}$. Denote $t^D, t^R$ as the period at which the switch to divorce and remarriage happen, respectively. \\
+
+
+\subsection{Utility Function}
+The flow utility depends on consumption, $c_t^j$, labor supply $h_t^j$, and marriage. Labor supply is discrete but, to allow the intensive margin, part-time working is allowed. Thus, labor supply can take on three values, full time $h_t^j = 1$,  part time $h_t^j = \frac{1}{2}$, or not working $h_t^j = 0$. We allow for heterogeneity in marginal utility of consumption, leisure, and marriage by considering $Q$ discrete  unobservable types of individuals. We also introduce stochastic shocks to  marginal utility of consumption, leisure, and marriage. To allow for risk averse agents, we introduce the concavity in utility function with respect to consumption. In addition we allow for complementarity between consumption and leisure as evidence for it as opposed to intra-temporal separability of consumption and leisure. Finally, state dependence in labor supply from unemployment to full time or part time job is taken into account.  Utility function is specified as the following \footnote {To avoid the clutter of indices I drop the the index for household and gender. To be precise, $c^j_{i,t}$ denotes the consumption of the partner of gender $j$ in the household $i$ at period $t$. }:
+  
+\begin{align*}
+ u(c_{t}, h_{t}, m_{t}; \ce{^{c}\epsilon_{t}}, \ce{^{h}\epsilon_t}, \ce{^{\mathbf{m}}\mathbf{\epsilon_t}}) = & \dfrac{c_t^{\sum \limits_ {i=1}^{Q} \alpha_iI(type = i)}}{{\sum \limits_ {i=1}^{Q} \alpha_iI(type = i)}} \left (1 + e^{\beta_1 h_t+\ce{^c\epsilon_t}} \right ) \\
+& + h_t \left( \sum \limits_{i=1}^{Q} \left( \beta_{i+1} I(type =i) + \beta_{i+1,W}  I(type = i, gender = W)\right) \right. \\
+& \left.  + \beta_{Q+2} I(race = Black) + \beta_{Q+3} I(race = Hispanic) +\ce{^h\epsilon_t}  \right) \\
+& + \beta_{Q+4} I(h_t =\frac{1}{2}, h_{t-1} = 0) + \beta_{Q+5} I(h_t = 1, h_{t-1} = 0) \\
+& + \sum \limits_{i=1}^{Q} \sum \limits_{l=1}^{Q} \left( \beta_{Q+5+i+l} + \ce{^{m,l}\epsilon_t}\right ) I(\text{Wife's Type} = i, \text{Husband's Type} = l) I(m_t = 1)
+\end{align*}
+
+
+where $\mathbf {\epsilon_t^m}$ is the vector of love shocks for different types of marriages. $m_t$ is a binary variables which is equal to 1 for the married. 
+
+\subsection{Pareto Weights}
+
+ We assume that Pareto weights are set at the beginning of the marriage and remains the same thought the marriage. In other words, we don not allow for renegotions about Pareto weight in the course of marriage. However, couples are not fully committed to their vows and marriage dissolves when the participation constraint of at least one of the spouses bind according to mutual consent divorce laws. To ensure that the husband's Pareto weight \footnote {To avoid the clutter of indices I drop the index referring to the household index. To be precise, $\theta_i^H$ denotes the husband's Pareto weight in the household $i$.}$\theta^H \in (0,1)$, we choose a logistic functional form as the following: 
+
+\begin{align*}
+\theta^H = & \left ( 1 + \exp \left( \theta_1 (w^H_{0} - w^W_{0}) + \theta_2 \log \left( \dfrac{E^H}{E^W} \right) + \theta_3 \log \left ( \dfrac{K^H_{0}}{K^W_{0}}\right ) + \theta_4 sr +\theta_5 \log \left ( \dfrac{\ce{^p y^H}}{\ce{^p y^W}}\right ) )\right. \right. \\
+& \left. \left. + \theta_6 (t^H - t^W) + \theta_7 (t^H - t^W)^2 +  \sum \limits_{i=1}^{Q} \sum \limits_{l=1}^{Q} \theta_{7+i+l} I(\text{Wife's Type} = i, \text{Husband's Type} = l)   \right )\right )^{-1}
+\end{align*}
+
+where \( e_j, K_{0j}, y_j^P, t_j\) are j's education, initial experience, parent's income, and age. $sr$ is the sex ratio where the couples meet. \\
+
+\subsection{Wage Process}
+
+To identify the wage shocks properly we need to control for observables that can predict wages. We control for part/full time jobs as they have systematic differences in terms of wage rate. We also include the conventional covariates in the Mincer equation, namely, education and a quadratic expression of experience, and demographics. In addition, we control for state of residence and the dummy for living in a large city. Also, we include the interaction terms of year with education, race, and state of residence.  
+%Finally, we control for unobserved heterogeneity among individuals and their interaction with gender.%
+ The wage variation not explained by these covariates is considered as wage shocks, which are not predictable by agents. The wage of individual of gender $j$ in the household $i$ at age $t$ is explained as follows: 
+
+\begin{align*}
+\log w_{i,t}^j = & \omega_1 K_{i,t}^j + \omega_2 (K_{i,t}^j)^2 + \omega_3 E_{i,t}^j + \omega_4 I(h_{i,t} ^j = \frac{1}{2}) +   \omega_5 I(race = Black) + \omega_6 I(race = Hispanic) \\
+& + \sum \limits_{\tau =t_0}^{T}  \left ( \omega_{6,\tau} E_{i, \tau}^j + \omega_{7, \tau} I(race = Black) + \omega_{8, \tau} I(race = Hispanic) \right )I(year = \tau)  \\
+& + \varepsilon^j_{i,t} \\
+\end{align*}
+
+where the human capital is accumulated according to the following rule:
+
+\begin{equation*}
+K_{i,t}^j = K_{i,t-1}^j + h_{i,t}^j
+\end{equation*}
+
+
+There are two approaches to model the wage shocks process: HIP and RIP. In the HIP approach, the income shocks are modeled by a deterministic heterogeneous growth rate, a persistent  component, and a non-persistent transitory competent. Thus the income shock is modeled as follows:
+
+\begin{align*}
+\varepsilon^j_{i,t} & = \xi^j_{i,t} + u^j_{i,t}\\
+\xi^j_{i,t} &= \rho \xi^j_{i,t-1} + \vartheta^j_{i,t} \\
+\omega_1 &=  \sum \limits_{i=1}^{Q} \left( \nu_{i} I(type =i) + \nu_{i,W}  I(type = i, gender = W)\right ) \\
+\omega_2 &=  \sum \limits_{i=1}^{Q} \left( \nu_{i+Q} I(type =i) + \nu_{i+Q,W}  I(type = i, gender = W)\right )
+\end{align*}
+
+where $\xi_{i,j,t}$ is the persistent stationarity component and $u_{i,j,t}$ is the measurement error. The coefficients on experience, in the wage process is heterogeneous with respect to individual types and gender to capture the deterministic heterogenous part of income growth.  We assume that $\vartheta_{i,j,t}$ and measurement error $u_{i,j,t}$\ are not correlated across time and spouses.\\
+
+In contrast, in the RIP approach there is no heterogeneity in income growth, but the wage shocks are compromised of two components: a random walk component and a transitory component. 
+
+\begin{align*}
+\varepsilon^j_{i,t} &= p^j_{i,t} + \zeta^j_{i,t} + u^j_{i,t} \\
+p^j_{i,t} &= p^j_{i,t-1} + \eta^j_{i,t}
+\end{align*} 
+
+where $u_{i,j,t}$ is the measurement error, $p_{i,j,t}$ is the permanent component of income shock, and $\zeta^j_{i,t}$ is the transitory component of income shock. We make the following assumptions about the covariance structure of shocks:
+
+\begin{equation*}
+E(\zeta^j_{i,t} \zeta^k_{i,t-s}) =
+ \begin{cases}
+\sigma^2_{\zeta_j} & \mbox{if j = k, s=0} \\
+\sigma_{\zeta_j \zeta_k} & \mbox{if j $\neq$ k, s=0} \\
+0 & \mbox{otherwise}
+\end{cases}
+\end{equation*}
+
+\begin{equation*}
+E(\eta^j_{i,t} \eta^k_{i,t-s}) = 
+ \begin{cases}
+\sigma^2_{\eta_j} & \mbox{if j = k, s=0} \\
+\sigma_{\eta_j \eta_k} & \mbox{if j $\neq$ k, s=0} \\
+0 & \mbox{otherwise}
+\end{cases}
+\end{equation*}
+
+\begin{equation*}
+E(\zeta^j_{i,t} \eta^k_{i,t-s}) = 0 \quad \text{for all $j,k = {H, W}$ and all $s$}
+\end{equation*}
+
+\subsection{Fertility}
+
+Fertility and having kids can change the labor supply decision of women, therefore ignoring fertility and treating it exogenously can conflate fertility with a negative shock to the wife's income. However, in order to reduce the computation burden and avoiding introducing a new state variable following VAN KLAUW, we assume that fertility follows a stochastic process. Since fertility is not the main focus of the paper, by modeling it as a stochastic process  instead of an endogenous deacons, we trade a new choice variable with more parameters (parameters of the process). we define the binary variable $\kappa_{i,t} =1$ when there is a child in the household $i$ at period $t$ (regardless their number and their age). we assume that $\kappa_{i,t}$ moves according to the following stochastic process: 
+
+\begin{align*}
+Pr(n_t =1 | n_{t-1} =0) &= \Phi(^fX'_t \mathbf{\beta_f}) \\
+Pr(n_t = 1 | n_{t-1} =1) &= 1 \\
+Pr(n_t = 0 | n_{t-1} = i ) &= 1 - Pr(n_t =1 | n_{t-1} = i) \quad i = 0,1
+\end{align*}
+
+\noindent where $^fX_t$ represents female's marital status in the previous period, $m_{t-1}$, education, race, and linear and quadratic of age. $\mathbf {\beta_f}$ represents the parameters should be estimated in fertility stochastic process. 
+\footnote{A more accurate approach is to model a stochastic pregnancies which would be a function of the number of kids in different ages. To do so, we create stat e variables store the number of children in different age groups. We include these state variables  and their quadratic terms in the stochastic process. }
+
+
+\subsection{Types and Initial Conditions}
+
+In out model we treat education, the experience before marriage, and marriage formation as exogenous. However, if there were correlation between these variables and the structure of wage shocks and the insurance mechanisms in the model, our estimation of the insurance value of family would be biased. To address this problem, we assume that there are $Q$ discrete individual types that the initial condition variables can be considered exogenous after conditioning on the types. \\
+
+To account for initial conditions and to control for unobserved heterogeneity, we assume that there are $Q$ discrete types of individuals. Assuming that $Q =2$, the type probability is given by the following function: 
+
+\begin{multline*}
+Pr(type_{i}^j = 2)  = \gamma_0 + \gamma_1 w_{i,0}^j + \gamma_2 K_{i,0}^j + \gamma_3 I(h_{i,0}^j = 0) + \gamma_4 I(h_{i,0}^j = 1) + \gamma_5 I(j = W) \\
++  \gamma_6 I(race_i^j = Black ) + \gamma_7 I(race_i^j = Hispanic ) + \gamma_8 E_{i,0}^j  + \gamma_9 t_{i,0}^j 
+\end{multline*}
+
+\subsection{The Remarried Problem}
+
+For tractability, we assume that the Pareto weight for the remarried, $\lambda$, is determined exogenously and is independent of individual specific characteristics of spouses as in reality it is hard to predict the qualities of the matching partner in the second marriage. Also we assume that remarriage is the absorbing state in which the marital state cannot change. In fact the couple need to make decision about consumption, saving, and labor supply, $q_t = \{c_t^H, c_t^W, h_t^H, h_t^W,A_{t+1}\}$. Thus, the couple solve the following problem: 
+
+\begin{align}
+\ce{^{R}V_t}(\Omega_t)  &= \max_{q_t} \quad  \lambda u(c_t^H, h_t^H, m_t =1) + (1 - \lambda) u(c_t^W, h_t^W, m_t = 1) + \beta E(^RV_{t+1} (\Omega_{t+1})| \Omega_t, q_t) \nonumber \\
+s.t. & \quad  \underbrace{\left ((c_t^H )^\phi + (c_t^W )^\phi  \right )^{\frac{1}{\phi}} e(n_t)}_{x_t} + A_{t+1} = (1+r) A_t + w_t^H h_t^H (1- \tau) + w_t^W h_t^W (1 - \tau) \nonumber 
+\end{align}
+
+denoting the solution for the above optimization problem by $\hat q_t$, the value of being remarried for a partner of gender $j$  given the next period value is:
+
+\begin{equation*}
+^{R}V_t^j (\Omega_t) = u(^0 \hat c_t^j, ^0 \hat h_t^j, m_t = 1) + \beta E \left (^RV^j_{t+1}(\Omega_{t+1}) | \Omega_t, ^{0} \hat q_t \right ) 
+\end{equation*}
+
+
+
+
+
+\subsection{The Divorcee Problem}
+A divorce person makes decision about her consumption, labor supply, and saving:
+
+\begin{equation*}
+ ^{D}q_t^j = \{c_t^j, h_t^j, A_{t+1}^j \} \quad  j \in \{H, W\}
+\end{equation*}
+
+\noindent The state variables for a divorced person are 
+
+\begin{equation*}
+\Omega_t = \{ A_t^j, p_t^j, K_t^j \} 
+\end{equation*}
+
+\noindent In each period t, a divorced person can remarry with probability $\pi_t^j$  determined exogenously by age and gender. Thus, a divorced person solve the following problem: 
+
+\begin{align*}
+^{D}V_t^j (\Omega_t) &= \max_{^{D}q_t^j} u(c_t^j, h_t^j, m_t = 0) + \beta \left \{ \underbrace{\pi_t^j  E \left (^{R}V_{t+1}^j (\Omega_{t+1}) | \Omega_t, ^{D}q_t^j  \right )+ (1-\pi_t^j ) E \left (^{D}V_{t+1}^j (\Omega_{t+1}) | \Omega_t, ^{D}q_t^j  \right )}_{^{RD}V^j_{t+1} (\Omega_t)}\right \} \\
+& s.t. \quad  c_t^j e(n_t) + A_{t+1}^j = (1+r) A_t^j + w_t^j h_t^j (1 - \tau)
+\end{align*}
+
+given next period value functions, $^{R}V_{t+1}^j (\Omega_{t+1})$ and $^{D}V_{t+1}^j (\Omega_{t+1})$, the above problem is a static optimization problem. Denoting the optimum solution by $^{D}\tilde q_t^j$, the value of being single at period $t$ for a person of gender $j$ is
+
+\begin{equation*}
+^{D}V_t^j (\Omega_t) = u(\tilde c_t^j (\Omega_t), \tilde h_t^j(\Omega_t), m_t = 0) + \beta \enskip ^{RD}V^j_{t+1} (\Omega_t)
+\end{equation*}
+
+
+\subsection{The Married Problem}
+
+The couples in each period should decide about each spouse's consumption, their labor supply, and the family saving $q_t = \{c_t^H, c_t^W, h_t^H, h_t^W,A_{t+1}\}$ in addition to decision about continuing the marriage or getting divorce, $d_t$. The state variables for the household \footnote{ To avoid clutter in indices, I drop the household index.} decision is 
+
+\begin{equation*}
+\Omega_t = \{ A_t^H, A_t^W, K_t^W, p_t^H, p_t^W  \} 
+\end{equation*}
+
+The value of marriage is determined as the following 
+
+\begin{equation*}
+^{M}V_t = \max_{d_t \in \{0,1\}} \{ \ce{^{M0}V_t}, \ce{^{M1}V_t} \}
+\end{equation*}
+
+where $d_t = 1$ denotes the decision to divorce. To define the value function assume that the leading period value function, $V_{t+1}$ are known. 
+
+\begin{align}
+\ce{^{M0}V_t}(\Omega_t)  &= \max_{q_t} \quad  \theta^H u(c_t^H, h_t^H, m_t =1) + (1 - \theta^H) u(c_t^W, h_t^W, m_t = 1) + \beta E(^MV_{t+1} (\Omega_{t+1})| \Omega_t, q_t) \nonumber \\
+s.t. & \quad  \underbrace{\left ((c_t^H )^\phi + (c_t^W )^\phi  \right )^{\frac{1}{\phi}} e(n_t)}_{x_t} + A_{t+1} = (1+r) A_t + w_t^H h_t^H (1- \tau) + w_t^W h_t^W (1 - \tau) \nonumber \\
+& \underbrace{u(c_t^j, h_t^j, m_t = 1) + \beta E \left (^MV^j_{t+1}(\Omega_{t+1}) | \Omega_t, q_t \right )}_{^{M}V_t^j (\Omega_t)}  \geq \enskip  ^{D}V_{t}^j (\Omega_t)\quad j \in \{ H, D\} \label{participation}
+\end{align}
+
+
+where $E$ is taken with respect to utility and wage process shocks.  $e(n_t)$ is an equivalence scale that take into account the number of children $n_t$ on inflation of the couples consumption. $x_t$ captures the economies of scale that couples enjoy in their consumption technology by forming a family with $\phi \geq 1$.  \\
+
+Given the next period value functions, $^MV_{t+1}, ^MV^j_{t+1}$, the above problem becomes a static optimization problem with two inequality constraints representing the participation constraints \eqref{participation} for each of the spouses. Denoting the solution of the above optimization problem by $^0 \bar q_t$, the value of being married for the spouse of gender $j$ at period $t$ is given by:
+
+\begin{equation*}
+^{M}V_t^j (\Omega_t) = u(^0 \bar c_t^j, ^0 \bar h_t^j, m_t = 1) + \beta E \left (^MV^j_{t+1}(\Omega_{t+1}) | \Omega_t, ^{0} \bar q_t \right ) 
+\end{equation*}
+
+If the couple decide to get divorce at period $t$, the family asset divides equally and the household will get the following value:
+
+\begin{align*}
+\ce{^{M1}V_t}(\Omega_t)  &= \max_{q_t} \quad  \theta^H \left ( u(c_t^H, h_t^H, m_t =0)  + \beta E(^{RD}V^j_{t+1} (\Omega_{t+1})| \Omega_t, q_t) \right) \\
+  & + (1 - \theta^H) \left ( u(c_t^W, h_t^W, m_t = 0) + \beta E(^{RD}V^j_{t+1} (\Omega_{t+1})| \Omega_t, q_t) \right )\\
+s.t. & \quad   c_t^j e(n_t) + A_{t+1}^j = (1+r) A_t^j + w_t^j h_t^j (1 - \tau) \quad j \in \{H, W\} \\
+& A_t ^j = \dfrac{A_t}{2}
+\end{align*}
+ 
+\subsection{Solving The Model}
+
+Starting backward, we obtain the following value functions for all values of state-space at each period:
+
+\begin{equation*}
+\Psi_t =\{ ^{R}V_t, ^DV^j_t, ^{M1}V_t, ^{M0}V_t\}
+\end{equation*}
+
+\noindent Calculating all of these value functions there are two continuous variable, $\{c_t^H, c_t^W\}$, and two discrete variables $\{h_t^H, h_t^W\}$. Calculating $^RV_t^j, ^{M1}V_t^j$ requires an unconstrained optimization problem and  calculating $^{M0}V_t$ involves a constrained optimization with two inequality constraints. Calculating $^DV_t^j$ involves two separate optimization problem to determine $\{c_t^H, h_t^H\}$ and $\{c_t^W, h_t^W\}$.  Solving these optimization problems paves the way for calculating the subsidiary value functions:
+
+\begin{equation*}
+\Psi_t'  =\{ ^{R}V_t^j, ^MV^j_t, ^{M}V_t, ^{RD}V_t^j\}
+\end{equation*}
+
+\noindent The terminal conditions for state variables are given by the following: 
+
+\begin{align*}
+A_{T+1}^j &= 0  \quad j \in \{H, W\} \\ 
+\end{align*}
+
+\subsection{Identification and Exclusion Restriction}
+
+
+
+
+
+% --------------------- Bibliography hidden with a save box ---------------------------------------
+\clearpage
+\bibliographystyle{chicago}
+\bibliography{heckman,Mohsen}
+
+\end{document}
